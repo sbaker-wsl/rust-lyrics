@@ -31,7 +31,7 @@ fn print_fill(x: usize) {
     println!("On the {z} day of christmas,");
     println!("my true love gave to me");
 
-    if (x == 0) { 
+    if x == 0 { 
         println!("{y}.");
     }
 
@@ -47,7 +47,7 @@ fn print_fill(x: usize) {
 
     if x > 0 {
         y = GIFTS[0];
-        if (x == 11) {
+        if x == 11 {
             println!("and {y}!");
         }
 
