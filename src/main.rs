@@ -13,7 +13,7 @@ const SPELLED: [&str; 12] = ["first", "second", "third", "fourth", "fifth",
                             "eleventh", "twelfth"];
 
 fn main() {
-    println!("Lyrics for The Twelve Days of Christmas.");
+    println!("Lyrics for The Twelve Days of Christmas:");
     println!("");
     print_carol();
 }
@@ -28,7 +28,7 @@ fn print_fill(x: usize) {
     let mut count = x;
     let mut y = GIFTS[count];
     let z = SPELLED[count];
-    println!("On the {z} day of Christmas");
+    println!("On the {z} day of Christmas,");
     println!("my true love gave to me");
 
     if x == 0 { 
