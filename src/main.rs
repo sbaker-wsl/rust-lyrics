@@ -1,19 +1,19 @@
 // GOAL: print the lyrics to the christmas carol the twelve days of 
 // christmas, taking advantage of the repetetiveness of the song
 
-const GIFTS: [&str; 12] = ["a partridge in a pear tree", "two turtle doves",
-            "three french hens", "four calling birds", "five golden rings",
-            "six geese-a-laying", "seven swans a-swimming",
-            "eight maids a-milking", "nine ladies dancing",
-            "ten lords a-leaping", "eleven pipers piping",
-            "twelve drummers drumming"];
+const GIFTS: [&str; 12] = ["a partridge in a pear tree", "Two turtle doves",
+            "Three French hens", "Four calling birds", "Five golden rings",
+            "Six geese a-laying", "Seven swans a-swimming",
+            "Eight maids a-milking", "Nine ladies dancing",
+            "Ten lords a-leaping", "Eleven pipers piping",
+            "Twelve drummers drumming"];
 
 const SPELLED: [&str; 12] = ["first", "second", "third", "fourth", "fifth",
                             "sixth", "seventh", "eighth", "ninth", "tenth",
                             "eleventh", "twelfth"];
 
 fn main() {
-    println!("Lyrics for twelve days of Christmas.");
+    println!("Lyrics for The Twelve Days of Christmas.");
     println!("");
     print_carol();
 }
@@ -28,11 +28,11 @@ fn print_fill(x: usize) {
     let mut count = x;
     let mut y = GIFTS[count];
     let z = SPELLED[count];
-    println!("On the {z} day of christmas,");
+    println!("On the {z} day of Christmas");
     println!("my true love gave to me");
 
     if x == 0 { 
-        println!("{y}.");
+        println!("A partridge in a pear tree.");
     }
 
     else {
@@ -48,11 +48,11 @@ fn print_fill(x: usize) {
     if x > 0 {
         y = GIFTS[0];
         if x == 11 {
-            println!("and {y}!");
+            println!("And {y}!");
         }
 
         else {
-            println!("and {y}.");
+            println!("And {y}.");
         }
 
     }
